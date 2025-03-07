@@ -15,7 +15,10 @@ endif %}
   prefer_mode
   }}
 >
-  {% include head.html %}
+  <head>
+    {% include head.html %}
+    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}" />
+  </head>
 
   <body>
     {% include sidebar.html lang=lang %}
