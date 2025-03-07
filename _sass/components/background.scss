@@ -1,0 +1,31 @@
+/* Styles for the wavy lines background */
+// body {
+//   background: black;
+//   overflow: hidden;
+//   margin: 0;
+// }
+
+#waveContainer {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure the SVG is behind other content */
+}
+
+#topbar-wrapper {
+  background-color: transparent;
+  height: 4em;
+}
+
+footer {
+  background-color: transparent;
+  height: 5rem;
+  border-top: 1px solid var(--main-border-color);
+}
+
+:root {
+  --text-muted-color: #8f9499; /* Update this value to your desired color */
+  /* other variables */
+}
