@@ -84,6 +84,6 @@ endif %}
     {% for _include in layout.script_includes %} {% assign _include_path =
     _include | append: '.html' %} {% include {{ _include_path }} %} {% endfor %}
     {% include_cached search-loader.html lang=lang %}
-    <script src="{{ '/assets/js/dist/background.js' | relative_url }}"></script>
+    <script src="{{ '/assets/jsbundle exec htmlproofer _site \/background.js' | relative_url }}"></script>
   </body>
 </html>
