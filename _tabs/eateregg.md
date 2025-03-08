@@ -1,14 +1,8 @@
 ---
-title: "A little love"
-date: 2025-03-08 10:00:00 +0000
-categories: []
-tags: []
-pin: false
-hidden: true
-published: true
+title: ""
 ---
 
-<script src="/assets/support/libs/typed.js"></script>
+
 
 <p><span id="typed"></span></p>
 
@@ -17,21 +11,21 @@ published: true
 <script src="/assets/support/libs/setImmediate.js" type="text/javascript"></script>
 <script src="/assets/support/libs/aes-js.js" type="text/javascript"></script>
 <script src="/assets/support/libs/decrypt.js" type="text/javascript"></script>
-
+<script src="/assets/support/libs/typed.js"></script>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         //to remove the pass on url, use decryptData(encryptedHex, true);
         function load() {
-            info = decryptData(
-                "b9b97e3d53c3157ffc718d2780f06e41b434adfdf88c4cacb92ba9ad0e7127679f05f82b3042b5f3be39030c338042b6bf8d249b3af050a959853aef9576c4cf568c64b31f30d96aec64debe156cc41c62416d1b01d21a22632abb8d8f67f62b56e8e0d894c90c8469c695b53cfab140df5e8dfbf0b7e07fea1f2674b5dbd5e473346a5843c33a620d5fc6688569ce63542bd162057804edb2bcc622fa10f0335726c8408d330fc22633e0211105270c544fe187da7cfb463837a4f58a50698bd9426123cd82b8179c143b0ced20f5b4a402cd4dcff4ab11779b839231608a30b83895c1f05a17c5b28699b8371a6a594835671237904c3d8eef8c803fbbd750a38497a10f324b504c40021acac953f11aeab0923eb95bd7e5802a43d047c1e79c29cacc4a921445e3f88821bda263ec1466e884"
+            var info = decryptData(
+                "a7ec7146bf534b6d0f8dc44363336e0952fba3b9bdcd4c072a2ceeab0c97f9e1e22870b0d94ab5e91caa04efeb810be21fe7fa12a112fa2342cd287b0fbd051ab06fb009933d72eafbc054a55dfe9f07ab41679d78d50d2e208273205c29ff63d491f3c294c385f87e88d7fdb629dd9ad619c3fff0a5f77fecb454a9b5dbdc7ce8f5e584cccc7181c1e55c6366193280896ad181c1ec9f2cbbf1936e4dd872a80c977f9b6eeaa200737e6ff2e9042714c715eb79da6bfb6423d4a2f584d933a9044266aab587b750df0cb256daedbcf70872b0540e2460b1e3818c71fb6b4b4e8ab00fac18bcc3c5b2949bb8371acc8c0b7642397547c53c6d310e15ae9b994ceb8981a11a324a7e4f075abc1d8a0b30e12fb6922521c11c2458cfcc0ceacaaadd344356cd8156"
             );
 
             if (!info.hasOwnProperty("error")) {
                 
                 var options = {
                     strings: [info],
-                    typeSpeed: 90,
+                    typeSpeed: 20,
                     backSpeed: 25,
                     loop: false
                 };
@@ -42,8 +36,8 @@ published: true
 
         setTimeout(function () {
         // this function is heavy so ... the page gonna frozen for a while
-        load();
-        }, 2000);
+            load();
+        }, 1000);
     });
 </script>
 
