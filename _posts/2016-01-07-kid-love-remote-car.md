@@ -1,7 +1,7 @@
 ---
 title: "One of my first DIY toys"
 date: 2016-01-07 10:00:00 +0000
-categories: remote_control, toy]
+categories: [remote_control, toy]
 tags: [Remote, Car, DIY]
 pin: false
 image: "assets/img/diycar/IMG_0059.JPG"

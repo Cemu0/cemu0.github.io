@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./libs/scrypt.js" type="text/javascript"></script>
+    <script src="./libs/buffer.js" type="text/javascript"></script>
+    <script src="./libs/aes-js.js" type="text/javascript"></script>
+    <script src="./libs/decrypt.js" type="text/javascript"></script>
+    <script src="./libs/generateVcard.js" type="text/javascript"></script>
+  </head>
+  <body></body>
+
+  <script>
+    //to remove the pass on url, use decryptData(encryptedHex, true);
+    async function load() {
+      info = await decryptData("");
+
+      if (!info.hasOwnProperty("error")) {
+        loaded = true;
+        console.log(info);
+      }
+    }
+
+    setTimeout(function () {
+      // this function is heavy so ... the page gonna frozen for a while
+      load();
+    }, 10);
+  </script>
+</html>

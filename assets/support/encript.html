@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+  </head>
+  <body>
+    <h1>Encrypt text information</h1>
+    <h1>
+      This should be able to completely run offline and not store or send any
+      information to anywhere, just to ensure you should turn off the internet
+    </h1>
+    <fieldset id="s">
+      <textarea id="input_data" rows="10" cols="30"></textarea>
+      <button id="encodeF">Encode</button>
+    </fieldset>
+    <div>Result</div>
+    <textarea id="result" rows="10" cols="30"></textarea>
+    <button id="clearData">CLEAR DATA</button>
+
+    <script src="libs/scrypt.js" type="text/javascript"></script>
+    <script src="libs/buffer.js" type="text/javascript"></script>
+    <script src="libs/setImmediate.js" type="text/javascript"></script>
+    <script src="libs/aes-js.js" type="text/javascript"></script>
+
+    <script>
+      "use strict";
+
+      document
+        .getElementById("clearData")
+        .addEventListener("click", function () {
+          document.getElementById("input_data").value = "";
+          document.getElementById("result").value = "";
+        });
+
+      document.getElementById("encodeF").addEventListener("click", function () {
+        const inputData = document.getElementById("input_data").value;
+        if (!inputData) {
+          alert("Please enter some data to encode.");
+          return;
+        }
+
+        const password = prompt(
+          "Enter a password for encryption (at least 8 characters):"
+        );
+        if (!password || password.length < 8) {
+          alert("Password should contain at least 8 characters.");
+          return;
+        }
+
+        const passwordBuffer = new buffer.SlowBuffer(
+          password.toLocaleLowerCase().normalize("NFKC")
+        );
+        const salt = new buffer.SlowBuffer("someSalt".normalize("NFKC"));
+
+        const N = 16384,
+          r = 8,
+          p = 2;
+        const dkLen = 32;
+
+        const key = scrypt.syncScrypt(passwordBuffer, salt, N, r, p, dkLen);
+
+        const textBytes = aesjs.utils.utf8.toBytes(inputData);
+        const aesCtr = new aesjs.ModeOfOperation.ctr(key, new aesjs.Counter(5));
+        const encryptedBytes = aesCtr.encrypt(textBytes);
+
+        const encryptedHex = aesjs.utils.hex.fromBytes(encryptedBytes);
+
+        document.getElementById("result").value = encryptedHex;
+      });
+    </script>
+  </body>
+</html>

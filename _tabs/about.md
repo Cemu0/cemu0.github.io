@@ -35,4 +35,4 @@ Hey there! I've been tinkering with lots of side projects over the years, and th
 
 I've dived headfirst into countless side projects, exploring everything from create my custom 3D printer, make some robots and software development.  
 
-I hope you enjoy checking them out! If you have any cool ideas you'd like to share, please feel free to [email](mailto:hello@quocanh.net) me. 
+I hope you enjoy checking them out! If you have any cool ideas you'd like to share, please feel free to [contact](mailto:hello@quocanh.net) me. 
