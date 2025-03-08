@@ -1,4 +1,4 @@
-async function decryptData(encryptedHex, remove_key = false) {
+function decryptData(encryptedHex, remove_key = false) {
   //get the pass from the pass key in url
   var url = new URL(window.location.href);
   var pass = url.searchParams.get('pass');
