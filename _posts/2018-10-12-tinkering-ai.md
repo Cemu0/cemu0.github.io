@@ -13,10 +13,16 @@ The result from last year's fair made me willing to do something even more chall
 The previous fair also allowed me to know a new friend, Huy and a new teacher in the high school Mrs. To Lan, she is an Infomation Technology teacher. So I gathered my friends and asked my teacher for some help to prepare for the next competition. 
 Our strategy is an idea that can benefit the old, decided to make a camera system that can call in emergency cases like when someone falls on the floor. For the call part, that is a piece of cake, just bought a SIM module and hooked up to the UART port on the Raspberry Pi and you can make a call or text msg in just a few hours. But for the AI part, detecting someone falling on the floor using the camera was not simple, and quite a new concept to that day.
 To be honest AI at this time is the very beginning of the blooming stage, TensorFlow is one of the biggest machine learning platforms, and there is a post by Google on how to train your own model. So I went on to try that out. 
+
 ![Our latest tech](../assets/img/fall_person/DSC_0048.JPG)
 *An acrylic box with hot glue gets the job done*
+
+I also make some PCB for smart home control using hand gestures, like if the person falls it can... turn on the light. Or just in case AI is too hard, we are going to make an IOT project.
+![alt text](../assets/img/fall_person/DSC_0148.JPG)
+
 ## Collecting Data for the first time
 At this point for an AI model to run, you need thousands of images about the target you want the model to detect, and to detect a fall person, using an existing human detect model is not viable because the body shape is not the same (I tried to detect using the shape of the detected bounding box, if the rectangle stays vertical mean they… lying and when they lying on the floor, they probably fell. Another idea is to force the model to detect human video feed with 90 degrees rotation, but it wasn't reliable) 
+
 
 So I and Huy went on to DIY the "lying person dataset", by actually lying on the floor, we had some friends to help us with that. I also gathered data manually from the internet, by searching the related content (major of them are accident images, and some image about the old fall is faked) As it is our first time on ML, we have many to learn. We also attempt to collect hand data for gesture control (like, if you have fallen on the floor, and might want to cancel the emergency call by raising a hand. Quite a silly idea)
 
