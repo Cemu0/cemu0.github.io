@@ -19,8 +19,9 @@ We drive around the city, looking for parts that we could utilize in our future 
 
 ![My friend and wasteland](../assets/img/giant_robotarm/DSC_0051.JPG) 
 After collecting many parts, I chose some decent parts and drew CAD, as I knew working on a large scale is not simple because it just has too many parts to calculate and for drawing I use Creo. From the collected motor, I also need to measure the potential torque force each motor can provide under 12V.  
+
 ![motors](../assets/img/giant_robotarm/DSC_0019.JPG)
-Using car’s used DC motors is cost-saving, But it comes with another cost, the replacement part or the motor itself is hard to find, so if any motor breaks down, it is a huge risk. But I want something big and cheap so there are not many other options from the wasteland. DC motors are more friendly for driving too, but in the long term, the brushes will wear. I love using the advanced BLDC motor as it provides more control and challenges to control it. Or just use a Stepper motor like other people. 
+Using car’s used DC motors is cost-saving, But it comes with another cost, the replacement part or the motor itself is hard to find, so if any motor breaks down, it is a huge risk. But I want something big and cheap so there are not many other options from the wasteland. DC motors are more friendly for driving too, but in the long term, the brushes will wear out. I love using the advanced BLDC motor as it provides more control and challenges to control it. Or just use a Stepper motor like other people. 
 
 ![CAD](<../assets/img/giant_robotarm/Screenshot 2025-03-07 at 22.59.06.png>) 
 From the torque calculation, I continue to calculate and change the final robot size, the final design is also really important. I don't want to make a robot that cannot move. And as the robot is large, steel is the only viable option for making the robot. (at this point I know about 3D printing but I think it is too risky in terms of time, and plastic is not as... industrial look as steel frame)
