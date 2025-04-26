@@ -22,3 +22,11 @@ footer {
   --text-muted-color: #8f9499; /* Update this value to your desired color */
   /* other variables */
 }
+
+.post-preview {
+  background: rgba(31, 31, 31, 0.81);
+}
+
+.post-preview:hover {
+  opacity: 0.6;
+}
