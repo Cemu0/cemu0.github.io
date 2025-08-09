@@ -30,3 +30,12 @@ footer {
 .post-preview:hover {
   opacity: 0.6;
 }
+
+#post-list .card .card-body .card-title {
+  color: #ffffff !important;
+}
+
+#post-list .card .card-body .post-meta,
+#post-list .card .card-body .card-text.content {
+  color: #c9c6c6 !important;
+}
