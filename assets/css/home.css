@@ -39,3 +39,7 @@ footer {
 #post-list .card .card-body .card-text.content {
   color: #c9c6c6 !important;
 }
+
+.text-truncate {
+  color: #c9c6c6 !important;
+}
