@@ -19,7 +19,7 @@ Especially in a micro-mouse, where you will find that searching for a high-accur
 
 An Optical Mouse Sensor, or simply a Mouse, is what you use every day. It is a high-speed camera that captures a very small image of a small surface of your table and measures the position while you move it, and sends the signal to move the cursor on your ~`screen. For years, this technology has been significantly cheaper, only 2$ for a wireless mouse. And in some gaming mice, it can capture more than 10G of acceleration. This makes me feel that I need to put this sensor into a micromouse to see whether this is feasible. 
 
-After several usable mouse teardowns, I found that MX8650 is a usable sensor, so I quickly wired up this to test, but after several attempts, I didn't get the output. I came to [this page by ftukurou](http://ftukurou.blog41.fc2.com/blog-entry-782.html) and got the workable code. 
+After several usable mouse teardowns, I found that MX8650 is a usable sensor, so I quickly wired up this to test, but after several attempts, I didn't get the output. I came to [this page by ftukurou](https://ftukurou.blog41.fc2.com/blog-entry-782.html) and got the workable code. 
 
 After that, I quickly modified the robot and saw if the sensor could keep this robot moving in a straight line. And the result is quite surprising, it works although the floor was not really flat. With 3-4 meters move, the robot drifts around 3-5 cm, which is pretty good for no calibration at all. 
 
