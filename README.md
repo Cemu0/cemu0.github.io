@@ -36,7 +36,7 @@ Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wi
 
 ## Basicly just run 
 
-`./tool/run.sh`
+`./tools/run.sh`
 
 some time you need to run `bundle update`
 
