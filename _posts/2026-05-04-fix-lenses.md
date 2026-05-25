@@ -1,7 +1,7 @@
 ---
 title: Nikon lens kit cleaning AF-S DX 18-55 f/3.5-5.6 VR
 date: 2026-05-24 09:00:00 +0000
-categories: [Robotic]
+categories: [Fix]
 tags: [Camera, Fix]
 pin: false
 image: "../assets/img/26_camera_fix/IMG_7553.png"
@@ -18,3 +18,7 @@ So after wondering for several hours, I decided to tear apart the lens kit using
 ![alt text](../assets/img/26_camera_fix/IMG_7558.png)
 
 After checking closely with the Lens Groups, I found that I can simply turn the end of the lens and clean it, the gap in this was so small that I thought they used plastic to join these part together. So next time you can simply open the lense from the front and get this one inside clean if needed. A clean room is also required as my room have plenty of dust, but anyway, after assembling the lens, I got it to work better than before and continue on my time-lapse projects.  
+
+## Some guides:  
+[Parts of the lens](https://www.repairfaq.org/sam/n1855sps.jpg)  
+[PDF guide for opening the len](https://allphotolenses.com/public/files/pdfs/7478c756ef702a1f8245e5ca3b482109.pdf)  
